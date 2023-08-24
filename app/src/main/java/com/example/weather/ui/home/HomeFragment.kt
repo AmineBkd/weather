@@ -1,21 +1,22 @@
-package com.example.weather.ui
+package com.example.weather.ui.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.weather.databinding.FragmentTmpBinding
+import com.example.weather.databinding.FragmentHomeBinding
 
-class TmpPage : Fragment() {
-    private lateinit var binding: FragmentTmpBinding
+class HomeFragment : Fragment() {
+    private var _binding: FragmentHomeBinding? = null
+    private val binding get() = _binding!!
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
-        binding = FragmentTmpBinding.inflate(inflater, container, false)
-
+    ): View? {
+        _binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
     }
 }

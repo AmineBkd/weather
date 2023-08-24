@@ -3,11 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/tmpPage">
-
+    app:startDestination="@id/homeFragment">
     <fragment
-        android:id="@+id/tmpPage"
-        android:name="com.example.weather.ui.TmpPage"
-        android:label="TmpPage"
-        tools:layout="@layout/fragment_tmp"/>
+        android:id="@+id/homeFragment"
+        android:name="com.example.weather.ui.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home"/>
 </navigation>
